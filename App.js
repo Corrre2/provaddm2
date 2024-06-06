@@ -1,33 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import bruno from './SRC/components/bruno';
-import giovani from './SRC/components/giovani';
-import carol from './SRC/components/carol';
-import anajulia from './SRC/components/anajulia';
-
+import { StyleSheet, Text, View, Button } from 'react-native';
+import Bruno from './SRC/components/bruno';
+import Anajulia from './SRC/components/anajulia';
+import Carol from './SRC/components/carol';
+import Giovani from './SRC/components/giovani';
+import Title from './SRC/components/title';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <bruno/>
-      <anajulia/>
-      <carol/>
-      <giovani/>
+      <Title/>
+      <Bruno/>
+      <Anajulia/>
+      <Carol/>
+      <Giovani/>
 
-      <Button 
-      title="Enviar"/>
-
+      <Button title="Enviar" />
 
       <StatusBar style="auto" />
     </View>
   );
 }
-
-
-
-
-
-
 
 const styles = StyleSheet.create({
   container: {
